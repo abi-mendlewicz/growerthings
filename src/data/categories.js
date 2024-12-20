@@ -1,14 +1,14 @@
 export const categories = [
   {
-    slug: 'categoria/filtros',
+    slug: 'productos/filtros',
     title: 'Filtros',
   }, 
   {
-    slug: 'categoria/contenedores',
+    slug: 'productos/contenedores',
     title: 'Contenedores',
   }, 
   {
-    slug: 'categoria/otros',
+    slug: 'productos/otros',
     title: 'Otros',
   },
 ]
