@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-green;
+  }
+
+  header {
+    @apply grid grid-cols-3 grid-rows-1 p-6;
+  }
+
+  main {
+    @apply flex flex-col m-6 sm:mx-12 grow;
+  }
+
+  h1 {
+    @apply mb-6 text-2xl;
+  }
+
+  p {
+    @apply mb-6;
+  }
+}
+
+@layer components {
+  .nav-link-label {
+    @apply row-span-2 flex justify-center items-center;
+  }
+
+  .nav-link-separator {
+    @apply mx-2 border-2 border-t-transparent border-r-transparent border-b-green border-l-transparent;
+  }
+
+  .item-list {
+    @apply py-6 flex flex-wrap justify-between;
+  }
+}
