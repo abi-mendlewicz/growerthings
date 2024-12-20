@@ -30,7 +30,7 @@ export default function ItemDetailsContainer() {
           {item.description.map((description, k) =>
           <p key={k}>{description}</p>)}
         </div>
-        {item.sideDescription &&
+        {Object.keys(item.sideDescription).length > 0 &&
         <div>
           {'variations' in item.sideDescription &&
           <div className='flex justify-between'>
