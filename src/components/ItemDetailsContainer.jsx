@@ -15,28 +15,28 @@ export default function ItemDetailsContainer() {
         <img className='w-full' src={item.imgUrl} alt={item.title} />
         <div className='absolute inset-0 flex flex-col justify-around'>
           {item.details.map((detail, k) =>
-          <div className={`flex ${k % 2 ? 'self-start' : 'self-end text-right'} max-w-[40%]`} key={k}>
+          <div className={`flex ${k % 2 ? 'justify-start' : 'justify-end text-right'} max-h-[30%]`} key={k}>
             <DetailsBox>
-              <h2 className='mb-4 text-white'>{detail.title}</h2>
-              {item.details[0].description.map((v, k) => 
-              <p className='m-0' key={k}>{v}</p>)}
+              <h2 className='mb-0 sm:mb-4 text-white leading-none'>{detail.title}</h2>
+              {detail.description.map((v, k) =>
+              <p className='m-0 leading-none' key={k}>{v}</p>)}
             </DetailsBox>
           </div>
           )}
         </div>
       </div>
-      <div className='flex my-4 border'>
-        <div className='grow pt-2 px-2 border-e'>
+      <div className='flex flex-wrap my-4 border'>
+        <div className='basis-full sm:basis-1/2 grow pt-2 px-2 border'>
           {item.description.map((description, k) =>
           <p key={k}>{description}</p>)}
         </div>
         {Object.keys(item.sideDescription).length > 0 &&
-        <div>
+        <div className='basis-full sm:basis-1/4 border order-first sm:order-none'>
           {'variations' in item.sideDescription &&
           <div className='flex justify-between'>
             {item.sideDescription.variations.options.map((variation, k) =>
             <span
-              className={`p-2 ${item.sideDescription.variations.selected.includes(variation) ? 'bg-green text-black' : undefined} border border-green border-collapse`}
+              className={`p-2 grow ${item.sideDescription.variations.selected.includes(variation) ? 'bg-green text-black' : undefined} border border-green border-collapse text-center`}
               key={k}
             >
               {variation}
