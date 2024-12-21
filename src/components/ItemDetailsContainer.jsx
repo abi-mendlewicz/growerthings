@@ -10,7 +10,7 @@ export default function ItemDetailsContainer() {
     <>
       <p className='mb-0 uppercase'>{item.sku}</p>
       <h1 className='text-xl text-white'>{item.title}</h1>
-      <h2 className='mb-6 text-2xl uppercase [-webkit-text-stroke:2px_white]'>{item.highlight}</h2>
+      <h2 className='mb-6 ps-4 border-s-8 text-2xl leading-none uppercase [-webkit-text-stroke:2px_white] [-webkit-text-fill-color:black] font-black'>{item.highlight}</h2>
       <div className='relative'>
         <img className='w-full' src={item.imgUrl} alt={item.title} />
         <div className='absolute inset-0 flex flex-col justify-around'>

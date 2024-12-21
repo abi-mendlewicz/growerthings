@@ -8,7 +8,7 @@
   }
 
   header {
-    @apply grid grid-cols-3 grid-rows-1 py-4 px-3 sm:px-6;
+    @apply flex justify-between py-4 px-3 sm:px-6;
   }
 
   main {

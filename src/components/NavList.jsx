@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from 'react-router-dom'
-import IconPlus from '../assets/icons/IconPlus'
+import { HiOutlinePlusCircle } from 'react-icons/hi2'
 
 export default function NavList({links, callback}) {
   const linkList = links.map(link =>
@@ -11,7 +11,7 @@ export default function NavList({links, callback}) {
       onClick={() => callback()}
     >
       <div className='flex justify-end pe-1 bg-green'>
-        <IconPlus color='black' />
+        <HiOutlinePlusCircle color='black' />
       </div>
       <div className='py-4 px-4'>
         <h2>{link.title}</h2>

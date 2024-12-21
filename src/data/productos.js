@@ -1,6 +1,6 @@
-import IconDrop from '../assets/icons/IconDrop'
+import { BsDroplet } from 'react-icons/bs'
 import { CiSun } from 'react-icons/ci'
-import IconWind from '../assets/icons/IconWind'
+import { RiTailwindCssFill } from 'react-icons/ri'
 import IconIndustrialUse from '../assets/icons/IconIndustrialUse'
 import filtroImgUrl from './images/filtro.jpg'
 import contenedorImgUrl from './images/contenedor.jpg'
@@ -103,7 +103,7 @@ export const items = [
       'INDUSTRIA ARGENTINA',
     ],
     sideDescription: {
-      icons: [IconWind, IconDrop, CiSun],
+      icons: [RiTailwindCssFill, BsDroplet, CiSun],
       details: [
         'Protege tus cosechas de la luz, agua y aire',
       ],
