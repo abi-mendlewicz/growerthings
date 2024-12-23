@@ -25,12 +25,36 @@
 }
 
 @layer components {
+  .nav-link {
+    @apply max-[420px]:basis-full basis-[30%] max-[420px]:mb-2 border hover:text-gold;
+  }
+
+  .nav-link-active {
+    @apply max-[420px]:basis-full basis-[30%] max-[420px]:mb-2 border border-gold text-gold;
+  }
+
+  .nav-link-active > div:first-child {
+    @apply bg-gold text-white;
+  }
+
+  .nav-link-active > div:first-child > svg{
+    color: white;
+  }
+
   .nav-link-label {
-    @apply row-span-2 flex justify-center items-center;
+    @apply row-span-2 flex justify-center items-center hover:text-gold;
+  }
+
+  .nav-link-label-active {
+    @apply row-span-2 flex justify-center items-center text-gold;
   }
 
   .nav-link-separator {
     @apply mx-2 border-2 border-t-transparent border-r-transparent border-b-green border-l-transparent;
+  }
+
+  .highlight {
+    -webkit-text-stroke: 2px white;
   }
 
   .item-list {

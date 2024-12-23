@@ -24,9 +24,9 @@ export default function Navbar({showMenu, setShowMenu}) {
           onClick={() => setShowMenu(true)}
         />}
       </div> :
-      <nav className='col-start-2 col-span-2 grid grid-cols-6 grid-rows-2'>
+      <nav className='grow col-start-2 col-span-2 grid grid-cols-6 grid-rows-2'>
         <div className='col-span-2 row-span-2 grid grid-cols-2 grid-rows-2'>
-          <NavLink className='nav-link-label' to='/productos'>Productos</NavLink>
+          <NavLink className={({isActive}) => isActive ? 'nav-link-label-active' : 'nav-link-label'} to='/productos'>Productos</NavLink>
           <span className='nav-link-separator' />
         </div>
         <div className='col-start-3 col-span-2 row-span-2 grid grid-cols-2 grid-rows-2'>

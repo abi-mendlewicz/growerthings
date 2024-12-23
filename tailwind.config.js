@@ -5,7 +5,9 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Montserrat']
+    },
     colors: {
       green: '#49d99c',
       gold: '#b38a47',

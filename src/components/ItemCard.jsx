@@ -10,7 +10,7 @@ export default function ItemCard({item}) {
       key={item.id}
     >
       <img src={item.imgUrl} alt={item.title} />
-      <h2 className='px-4 bg-green uppercase text-2xl font-black [-webkit-text-stroke:2px_white]'>{item.highlight}</h2>
+      <h2 className='highlight px-4 bg-green uppercase text-2xl font-black'>{item.highlight}</h2>
       <h3 className='px-4 text-xl'>{item.title}</h3>
       <p className='flex justify-end mb-0'>
         Ver detalles
