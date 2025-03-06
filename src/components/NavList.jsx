@@ -9,14 +9,6 @@ export default function NavList({links, callback}) {
       key={link.slug}
       to={`/${link.slug}`}
       onClick={() => callback()}
-      onMouseEnter={e => {
-        e.currentTarget.firstChild.classList.remove('bg-green')
-        e.currentTarget.firstChild.classList.add('bg-gold')
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.firstChild.classList.remove('bg-gold')
-        e.currentTarget.firstChild.classList.add('bg-green')
-      }}
     >
       <div className='flex justify-end pe-1 bg-green'>
         <HiOutlinePlusCircle color='black' />
@@ -28,7 +20,7 @@ export default function NavList({links, callback}) {
   )
 
   return (
-    <div className='flex flex-wrap justify-between w-full'>
+    <div className='flex flex-wrap'>
       {linkList}
     </div>
   )

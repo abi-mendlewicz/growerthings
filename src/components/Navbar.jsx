@@ -11,7 +11,7 @@ export default function Navbar({showMenu, setShowMenu}) {
     <>
       <Logo />
       {viewportWidth < 640 ?
-      <div className='col-start-3 justify-items-end content-center'>
+      <div className='me-2 col-start-3 justify-items-end content-center'>
         {showMenu ?
         <IoCloseCircleOutline
           size={24}

@@ -10,12 +10,13 @@ export default {
     },
     colors: {
       green: '#49d99c',
+      red: '#ff9898',
       gold: '#b38a47',
       black: '#000',
       white: '#fff',
       transparent: 'transparent',
+      modalBack: 'rgba(0, 0, 0, 0.6)',
     },
   },
   plugins: [],
 }
-

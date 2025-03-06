@@ -8,7 +8,7 @@
   }
 
   header {
-    @apply flex justify-between py-4 px-3 sm:px-6;
+    @apply flex justify-between items-center py-4 px-3 sm:px-6;
   }
 
   main {
@@ -22,15 +22,35 @@
   p {
     @apply mb-6;
   }
+
+  label {
+    @apply block;
+  }
+
+  input {
+    @apply inline-block mb-4 px-2 w-full text-black;
+  }
 }
 
 @layer components {
+  .modal-back {
+    @apply fixed inset-0 bg-modalBack transition-opacity z-10;
+  }
+
+  .modal-note-container {
+    @apply fixed inline-block top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-max max-h-[90%] max-w-[90vw] sm:max-w-lg md:max-w-2xl min-w-[70vw] sm:min-w-[60vw] bg-black border border-green overflow-y-auto z-10;
+  }
+
   .nav-link {
-    @apply max-[420px]:basis-full basis-[30%] max-[420px]:mb-2 border hover:text-gold;
+    @apply me-4 max-[420px]:mb-2 border hover:text-gold;
+  }
+
+  .nav-link:hover > div:first-child {
+    @apply bg-gold;
   }
 
   .nav-link-active {
-    @apply max-[420px]:basis-full basis-[30%] max-[420px]:mb-2 border border-gold text-gold;
+    @apply me-4 max-[420px]:mb-2 border border-gold text-gold;
   }
 
   .nav-link-active > div:first-child {
@@ -58,6 +78,6 @@
   }
 
   .item-list {
-    @apply py-6 flex flex-wrap justify-between;
+    @apply py-6 flex flex-wrap;
   }
 }

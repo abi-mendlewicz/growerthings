@@ -3,7 +3,7 @@ import { CiSun } from 'react-icons/ci'
 import { RiTailwindCssFill } from 'react-icons/ri'
 import IconIndustrialUse from '../assets/icons/IconIndustrialUse'
 import filtroImgUrl from './images/filtro.jpg'
-import contenedorImgUrl from './images/contenedor.jpg'
+import contenedorImgUrl from './images/contenedor.png'
 import poleaImgUrl from './images/polea.jpg'
 
 export const items = [
